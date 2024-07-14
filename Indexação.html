@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solucionador de Problemas com IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Solucionador de Problemas com IA</h1>
+    <p>Utilize o poder da IA para resolver problemas complexos. Defina o problema, carregue arquivos relevantes e converse com o modelo para obter soluções personalizadas.</p>
+    
+    <form id="problemSolverForm">
+        <label for="problema">Descreva o problema que você deseja resolver:</label>
+        <input type="text" id="problema" name="problema" required><br><br>
+        
+        <label for="arquivos">Carregue arquivos relevantes para o problema (documentos, imagens, etc.):</label>
+        <input type="file" id="arquivos" name="arquivos" multiple><br><br>
+        
+        <label for="conversa">Converse com o modelo para fornecer instruções e contexto adicionais:</label>
+        <textarea id="conversa" name="conversa" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="button" onclick="gerarSolucao()">Gerar Solução</button>
+    </form>
+    
+    <h2>Solução Gerada</h2>
+    <textarea id="resultados" rows="10" cols="50" readonly></textarea>
+    
+    <script src="script.js"></script>
+</body>
+</html>
